@@ -15,9 +15,9 @@ $(document).ready(function() {
 
 	var ajaxGif = function(gif){
 		$.ajax({
-			url: 'https://api.giphy.com/v1/gifs/search',
-			type: 'GET',
-			datatype: 'json',
+			url: 'https://api.giphy.com/v1/gifs/search', //dirección de donde va a pedir info
+			type: 'GET', // tipo de petición
+			datatype: 'json', // tipo de dato
 			data: {
 				q: gif,
 				api_key:'dc6zaTOxFJmzC'
@@ -40,6 +40,9 @@ $(document).ready(function() {
 	});
 
 });
+
+
+
 
 
 
